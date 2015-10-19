@@ -15,7 +15,7 @@ class CoffeeController < ApplicationController
       faraday.adapter  Faraday.default_adapter  # make requests with Net::HTTP
     end
 
-    body = "{\"frames\":[{\"index\": 0,\"text\": \"#{params['user_name']}: #{params['text']}\"}]}"
+    body = "{\"frames\":[{\"index\": 0,\"text\": \"#{params['user_name']}: #{params['text']}\",\"icon\":\"a774\"}]}"
 
     @status = conn.post do |req|
       req.url ENV['LA_METRIC_COFFEE']
