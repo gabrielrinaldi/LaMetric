@@ -30,8 +30,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Slack
 gem 'slack-notifier', '~> 1.4.0'
 
-# Rack timout
+# Rack timeout
 gem 'rack-timeout'
+
+# HTTP connection
+gem 'faraday'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
