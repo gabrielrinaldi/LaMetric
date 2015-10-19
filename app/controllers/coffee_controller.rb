@@ -25,7 +25,7 @@ class CoffeeController < ApplicationController
       req.body = body
     end
 
-    sleep(10)
+    sleep(5)
 
     body = "{\"frames\":[{\"index\": 0,\"text\": \"Coffee\",\"icon\":\"a1311\"}]}"
 
